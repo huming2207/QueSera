@@ -5,7 +5,13 @@
 #include "esp_spi_flash.h"
 #include "QueSeraMain.h"
 
-extern "C" {
+void QueSeraMain::start()
+{
+
+}
+
+extern "C"
+{
     void app_main(void);
 }
 
@@ -13,3 +19,4 @@ void app_main()
 {
 
 }
+

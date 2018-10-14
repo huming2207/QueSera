@@ -2,6 +2,7 @@
 ### ESP32 ESP-IDF SDK
 sdkconfig
 sdkconfig.old
+build/
 
 ### Linux template
 *~

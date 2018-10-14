@@ -3,7 +3,8 @@
 
 
 class QueSeraMain{
-
+public:
+    static void start();
 };
 
 
