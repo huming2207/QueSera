@@ -1,0 +1,16 @@
+# ninja log v5
+2	257	1539557947	mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir	360e9a3d9f597575
+257	336	1539557947	mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download	8536c8a317f3049e
+337	417	1539557948	mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update	ca0b0ff60be3d041
+338	419	1539557948	mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch	5f18a6aa6a7f07a5
+420	493	1539557948	mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure	e6503f9f29c5ec99
+494	2759	1539557950	mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build	dbb12515e4c3b143
+494	2759	1539557950	kconfig_bin/mconf-idf	dbb12515e4c3b143
+2763	2842	1539557950	mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install	c8fa70e247d92305
+2843	2951	1539557950	CMakeFiles/mconf-idf-complete	9c284408307b2f65
+2843	2951	1539557950	mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-done	9c284408307b2f65
+2951	207438	0	CMakeFiles/menuconfig	e587567f5227e1e
+3	1774	1539558235	build.ninja	318725d75acc2a8b
+1	57576	0	CMakeFiles/menuconfig	e587567f5227e1e
+1	1797	1539558547	build.ninja	318725d75acc2a8b
+1	77286	0	CMakeFiles/menuconfig	9eaef4e88f2d04f5

@@ -1,0 +1,13 @@
+# Target labels
+ mconf-idf
+# Source files and their labels
+/mnt/c/Users/humin/Projects/QueSera/build/CMakeFiles/mconf-idf
+/mnt/c/Users/humin/Projects/QueSera/build/CMakeFiles/mconf-idf.rule
+/mnt/c/Users/humin/Projects/QueSera/build/CMakeFiles/mconf-idf-complete.rule
+/mnt/c/Users/humin/Projects/QueSera/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule
+/mnt/c/Users/humin/Projects/QueSera/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule
+/mnt/c/Users/humin/Projects/QueSera/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule
+/mnt/c/Users/humin/Projects/QueSera/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule
+/mnt/c/Users/humin/Projects/QueSera/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule
+/mnt/c/Users/humin/Projects/QueSera/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule
+/mnt/c/Users/humin/Projects/QueSera/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule

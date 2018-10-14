@@ -1,4 +1,4 @@
-set(COMPONENT_SRCS "quesera_main.c")
+set(COMPONENT_SRCS "QueSeraMain.cpp")
 set(COMPONENT_ADD_INCLUDEDIRS "")
 
 register_component()

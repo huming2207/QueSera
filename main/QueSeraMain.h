@@ -1,0 +1,10 @@
+#ifndef QUESERA_QUESERAMAIN_H
+#define QUESERA_QUESERAMAIN_H
+
+
+class QueSeraMain{
+
+};
+
+
+#endif //QUESERA_QUESERAMAIN_H
