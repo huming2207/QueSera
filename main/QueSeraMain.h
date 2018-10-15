@@ -11,13 +11,13 @@ static EventGroupHandle_t wifiEventGroup;
 static const int WIFI_CONNECTED_BIT = BIT0;
 static int retryCount;
 
-class QueSeraMain{
-public:
-    void start();
+class QueSeraMain
+{
+    public:
+        void start();
 
-private:
-
-    static esp_err_t wifiConnectionEventHandler(void* ctx, system_event_t* event);
+    private:
+        static esp_err_t wifiConnectionEventHandler(void* ctx, system_event_t* event);
 };
 
 
