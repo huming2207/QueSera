@@ -1,4 +1,4 @@
-menu "WiFi Configuration"
+menu "QueSera Configuration"
 
 config ESP_WIFI_SSID
     string "WiFi SSID"
@@ -13,8 +13,21 @@ config ESP_WIFI_PASSWORD
 	WiFi password (WPA or WPA2) for the example to use.
 
 config ESP_MAXIMUM_RETRY
-    int "Maximum retry"
+    int "WiFi connection maximum retry count"
     default 5
     help
 	Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+
+config HTTP_RECV_BUFFER_SIZE
+    int "HTTP client stream buffer size"
+    default 512
+    help
+    Set the buffer size for HTTP client's stream reader
+
+config ICAL_DEFAULT_URL
+    string "iCal default URL"
+    default ""
+    help
+    Default string for an iCal file from a Calendar service provider (e.g. Outlook or Google Calendar)
+
 endmenu

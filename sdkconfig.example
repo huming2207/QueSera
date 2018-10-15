@@ -10,11 +10,13 @@ CONFIG_TOOLPREFIX="xtensa-esp32-elf-"
 CONFIG_MAKE_WARN_UNDEFINED_VARIABLES=y
 
 #
-# WiFi Configuration
+# QueSera Configuration
 #
 CONFIG_ESP_WIFI_SSID="quesera"
 CONFIG_ESP_WIFI_PASSWORD="whatever_will_be"
 CONFIG_ESP_MAXIMUM_RETRY=5
+CONFIG_HTTP_RECV_BUFFER_SIZE=512
+CONFIG_ICAL_DEFAULT_URL=
 
 #
 # Bootloader config
