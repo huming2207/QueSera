@@ -15,6 +15,18 @@ void QueSeraMain::start()
 
     tcpip_adapter_init();
 
+    // Initialize NVS
+    // WiFi functions depends on NVS to store some WiFi parameters,
+    // if NVS failed to initialize, WiFi will failed to initialize too.
+    esp_err_t nvsErr = nvs_flash_init();
+    if (nvsErr == ESP_ERR_NVS_NO_FREE_PAGES || nvsErr == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+        // NVS partition was truncated and needs to be erased
+        // Retry nvs_flash_init
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        nvsErr = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(nvsErr);
+
     // Register WiFi event handler
     ESP_ERROR_CHECK(esp_event_loop_init(this->wifiConnectionEventHandler, nullptr));
 
