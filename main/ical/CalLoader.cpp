@@ -1,3 +1,4 @@
+#include <sstream>
 #include <esp_log.h>
 #include "CalLoader.h"
 
@@ -41,6 +42,7 @@ void CalLoader::parseEventFromUrl(const char *url)
     while(readLength >= 0) {
         readLength = esp_http_client_read(client, buffer, CONFIG_HTTP_RECV_BUFFER_SIZE);
         ESP_LOGD(LOG_TAG, "Got data, length is %d bytes", readLength);
+        parseString(buffer);
     }
 
     ESP_LOGI(LOG_TAG, "HTTP Stream reader Status = %d, content_length = %d",
@@ -91,4 +93,19 @@ esp_err_t CalLoader::httpEventHandler(esp_http_client_event_t *evt)
     }
 
     return ESP_OK;
+}
+
+void CalLoader::parseString(const char *buffer)
+{
+    std::string strBuffer(buffer);
+
+    // Remove the Google-style string indent
+    replaceString(strBuffer, "\n ", "\n");
+
+    // Create string stream
+    std::istringstream strStream(strBuffer);
+    std::string currentLine;
+    while(std::getline(strStream, currentLine)) {
+
+    }
 }

@@ -22,6 +22,7 @@ class CalLoader
     private:
         void replaceString(std::string &origString, const std::string &oldString, const std::string &newString);
         static esp_err_t httpEventHandler(esp_http_client_event_t *evt);
+        void parseString(const char *buffer);
         time_t firstDtStart;
         time_t firstDtEnd;
         time_t secondDtStart;
