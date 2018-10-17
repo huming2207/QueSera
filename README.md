@@ -24,3 +24,7 @@ Compared to the previous project, this new project aims to use more ESP-IDF APIs
 - ESP-IDF has official built-in CMake support, so I can code with CLion now.
 - Writing the "real" C++ code instead of Arduino-style C++ code is more challenging. But it helps me practise more C++ anyway.
 - May receive potential performance improvements without Arduino.
+
+## Credit
+
+U8g2 ESP-IDF HAL by Neil Kolban: [https://github.com/nkolban/esp32-snippets/tree/master/hardware/displays/U8G2](https://github.com/nkolban/esp32-snippets/tree/master/hardware/displays/U8G2)
