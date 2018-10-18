@@ -30,4 +30,10 @@ config ICAL_DEFAULT_URL
     help
     Default string for an iCal file from a Calendar service provider (e.g. Outlook or Google Calendar)
 
+config ICAL_CACHE_PATH
+    string "iCal default cache path"
+    default "/spiffs/main.ical"
+    help
+    Default path for an iCal file cache in SPIFFS
+
 endmenu
