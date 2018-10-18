@@ -30,6 +30,13 @@ void QueSeraMain::start()
     // Register WiFi event handler
     ESP_ERROR_CHECK(esp_event_loop_init(this->wifiConnectionEventHandler, nullptr));
 
+    // Print how many free NVS storage left
+    nvs_stats_t nvs_stats {};
+    memset(&nvs_stats, 0, sizeof(nvs_stats));
+    nvs_get_stats(nullptr, &nvs_stats);
+    printf("NVS status: Used entries = (%d), Free entries = (%d), All entries = (%d)\n",
+           nvs_stats.used_entries, nvs_stats.free_entries, nvs_stats.total_entries);
+
     // Add WiFi configuration
     // So far I will use the hard-coded ones. It should read from NVS later.
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
