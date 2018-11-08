@@ -274,3 +274,12 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# KDevelop
+*.kdev4
+.kdev4/
+*.kdevelop
+*.kdevelop.filelist
+*.kdevelop.pcs
+*.kdevses
+.*kate-swp
+
