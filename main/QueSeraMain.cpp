@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <cstring>
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "esp_system.h"
-#include "esp_wifi.h"
-#include "esp_log.h"
-#include "nvs_flash.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
+#include <esp_system.h>
+#include <esp_wifi.h>
+#include <esp_log.h>
+#include <nvs_flash.h>
 #include "QueSeraMain.h"
 
 void QueSeraMain::start()
@@ -34,7 +34,7 @@ void QueSeraMain::start()
     nvs_stats_t nvs_stats {};
     memset(&nvs_stats, 0, sizeof(nvs_stats));
     nvs_get_stats(nullptr, &nvs_stats);
-    printf("NVS status: Used entries = (%d), Free entries = (%d), All entries = (%d)\n",
+    printf("NVS status: Used entries = (%zu), Free entries = (%zu), All entries = (%zu)\n",
            nvs_stats.used_entries, nvs_stats.free_entries, nvs_stats.total_entries);
 
     // Add WiFi configuration

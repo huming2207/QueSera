@@ -1,7 +1,3 @@
-//
-// Created by hu on 15/10/18.
-//
-
 #ifndef QUESERA_CALLOADER_H
 #define QUESERA_CALLOADER_H
 

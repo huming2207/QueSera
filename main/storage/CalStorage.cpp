@@ -1,9 +1,9 @@
-#include "CalStorage.h"
-
 #include <esp_err.h>
 #include <esp_log.h>
 #include <esp_spiffs.h>
 #include <sys/unistd.h>
+
+#include "CalStorage.h"
 
 CalStorage::CalStorage()
 {
@@ -41,7 +41,7 @@ CalStorage::CalStorage()
     if (ret != ESP_OK) {
         ESP_LOGE(LOG_TAG, "Failed to get SPIFFS partition information (%s)", esp_err_to_name(ret));
     } else {
-        ESP_LOGI(LOG_TAG, "Partition size: total: %d, used: %d", total, used);
+        ESP_LOGI(LOG_TAG, "Partition size: total: %zu, used: %zu", total, used);
     }
 }
 
